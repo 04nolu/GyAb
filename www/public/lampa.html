@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 50px;
+            font-size: 50px;
+            display: inline-block;
+        }
+        #on a{
+            background: rgb(0, 207, 0);
+        }
+        #off a{
+            background: red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jocke Prank</title>
+</head>
+<body>
+    <section id=on>
+        <a href="#" onclick="on('on')">På</a>
+    </section>
+    <section id=off>
+        <a href="#" onclick="on('off')">Av</a>
+    </section>
+    
+</body>
+<script>
+    async function on(relay){
+        let msg = await fetch("http://172.17.7.11/relay/0?turn="+relay)
+        let data = await msg.json()
+    }
+</script>
+</html>
