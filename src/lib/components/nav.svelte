@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
 
-<style>
+<style lang="scss">
     $nav-background-color: rgb(5, 5, 122);
 
 * {
@@ -149,12 +149,12 @@ img {
 <body>
   <nav>
     <div class="logo">
-      <label>Ludvig GyAb</label>
+      <h4>Ludvig GyAb</h4>
     </div>
     <ul class="nav-links">
       <li><a href="#">Hem</a></li>
       <li><a href="#">Om</a></li>
-      <li><a href="pages/gymnasiearbete.html">Gymnasiearbete</a></li>
+      <li><a href="gymnasiearbete">Gymnasiearbete</a></li>
       <li><a href="#">Projekt</a></li>
     </ul>
 
