@@ -1,190 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links li");
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-
-    <style lang="scss">
-      $nav-background-color: rgb(5, 5, 122);
-
-      * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
+  function burgerClick() {
+    //Toggle Nav
+    nav.classList.toggle("nav-active");
+    //Animate Links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = ``;
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 10 + 0.2
+        }s`;
       }
+    });
+    //Burger Animation
+    burger.classList.toggle("toggleBurger");
+  }
+</script>
 
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        min-height: 8vh;
-        background-color: $nav-background-color;
-        font-family: "Lato", sans-serif;
-      }
+<nav>
+  <div class="logo">
+    <h4>Ludvig GyAb</h4>
+  </div>
+  <ul class="nav-links">
+    <li><a href="/">Hem</a></li>
+    <li><a href="/om">Om</a></li>
+    <li><a href="/gymnasiearbete">Gymnasiearbete</a></li>
+    <li><a href="#">Projekt</a></li>
+  </ul>
 
-      .logo {
-        color: white;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        font-size: 20px;
-        font-weight: bold;
-      }
+  <div class="burger" on:click={burgerClick()}>
+    <div class="line1" />
+    <div class="line2" />
+    <div class="line3" />
+  </div>
+</nav>
 
-      .nav-links {
-        display: flex;
-        justify-content: space-around;
-        width: 30%;
+<style lang="scss">
+  $nav-background-color: rgb(5, 5, 122);
 
-        li {
-          list-style: none;
-        }
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
 
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: $nav-background-color;
+    font-family: "Lato", sans-serif;
+  }
 
-        a {
-          color: white;
-          text-decoration: none;
-          letter-spacing: 3px;
-          font-weight: bold;
-          font-size: 14px;
-        }
-        a:hover{
-          color: lime;
-        }
-      }
+  .logo {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
 
-      .burger {
-        display: none;
-        cursor: pointer;
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
 
-        div {
-          width: 25px;
-          height: 3px;
-          border-radius: 5px;
-          background-color: white;
-          margin: 5px;
-          transition: 0.5s ease-in-out;
-        }
-      }
+    li {
+      list-style: none;
+    }
 
-      @media screen and (max-width: 1024px) {
-        .nav-links {
-          width: 60%;
-        }
-      }
+    a {
+      color: white;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    a:hover {
+      color: lime;
+    }
+  }
 
-      @media screen and (max-width: 768px) {
-        body {
-          overflow-x: hidden;
-        }
+  .burger {
+    display: none;
+    cursor: pointer;
 
-        .nav-links {
-          position: absolute;
-          right: 0px;
-          height: 92vh;
-          top: 8vh;
-          background-color: $nav-background-color;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 50%;
-          transform: translateX(100%);
-          transition: transform 0.5s ease-in-out;
+    div {
+      width: 25px;
+      height: 3px;
+      border-radius: 5px;
+      background-color: white;
+      margin: 5px;
+      transition: 0.5s ease-in-out;
+    }
+  }
 
-          li {
-            opacity: 0;
-          }
-        }
+  @media screen and (max-width: 1024px) {
+    .nav-links {
+      width: 60%;
+    }
+  }
 
-        .burger {
-          display: block;
-        }
-      }
+  @media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
 
-      .nav-active {
-        transform: translateX(0%);
-      }
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: $nav-background-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
 
-      @keyframes navLinkFade {
-        from {
-          opacity: 0;
-          transform: translateX(50px);
-        }
-
-        to {
-          opacity: 1;
-          transform: translateX(0px);
-        }
-      }
-
-      .toggleBurger .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-      }
-
-      .toggleBurger .line2 {
+      li {
         opacity: 0;
       }
+    }
 
-      .toggleBurger .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-      }
+    .burger {
+      display: block;
+    }
+  }
 
-    </style>
+  .nav-active {
+    transform: translateX(0%);
+  }
 
-    <title>Gymnasiearbete - Ludvig Noriander</title>
-  </head>
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
 
-  <body>
-    <nav>
-      <div class="logo">
-        <h4>Ludvig GyAb</h4>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Hem</a></li>
-        <li><a href="om">Om</a></li>
-        <li><a href="gymnasiearbete">Gymnasiearbete</a></li>
-        <li><a href="#">Projekt</a></li>
-      </ul>
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
 
-      <div class="burger">
-        <div class="line1" />
-        <div class="line2" />
-        <div class="line3" />
-      </div>
-    </nav>
-  </body>
+  .toggleBurger .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
 
-  <script>
-    const navSlide = () => {
-      const burger = document.querySelector(".burger");
-      const nav = document.querySelector(".nav-links");
-      const navLinks = document.querySelectorAll(".nav-links li");
+  .toggleBurger .line2 {
+    opacity: 0;
+  }
 
-      burger.addEventListener("click", () => {
-        //Toggle Nav
-        nav.classList.toggle("nav-active");
-        //Animate Links
-        navLinks.forEach((link, index) => {
-          if (link.style.animation) {
-            link.style.animation = ``;
-          } else {
-            link.style.animation = `navLinkFade 0.5s ease forwards ${
-              index / 10 + 0.2
-            }s`;
-          }
-        });
-        //Burger Animation
-        burger.classList.toggle("toggleBurger");
-      });
-    };
-
-    navSlide();
-  </script>
-</html>
+  .toggleBurger .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+</style>
