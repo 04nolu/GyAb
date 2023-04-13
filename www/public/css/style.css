@@ -12,6 +12,10 @@ nav {
   background-color: rgb(5, 5, 122);
   font-family: "Lato", sans-serif;
 }
+nav label:hover {
+  color: lime;
+  cursor: pointer;
+}
 
 .logo {
   color: white;
@@ -35,6 +39,9 @@ nav {
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 14px;
+}
+.nav-links a:hover {
+  color: lime;
 }
 
 .burger {
