@@ -1,7 +1,7 @@
 <script>
-  const burger = document.querySelector(".burger");
+  /*   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
-  const navLinks = document.querySelectorAll(".nav-links li");
+  const navLinks = document.querySelectorAll(".nav-links li"); */
 
   function burgerClick() {
     //Toggle Nav
@@ -29,10 +29,10 @@
     <li><a href="/">Hem</a></li>
     <li><a href="/om">Om</a></li>
     <li><a href="/gymnasiearbete">Gymnasiearbete</a></li>
-    <li><a href="#">Projekt</a></li>
+    <li><a href="/projekt">Projekt</a></li>
   </ul>
 
-  <div class="burger" on:click={burgerClick()}>
+  <div class="burger">
     <div class="line1" />
     <div class="line2" />
     <div class="line3" />
@@ -41,12 +41,6 @@
 
 <style lang="scss">
   $nav-background-color: rgb(5, 5, 122);
-
-  * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
 
   nav {
     display: flex;
