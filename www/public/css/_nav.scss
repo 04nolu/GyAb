@@ -5,7 +5,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: $nav-background-color;
+    background-color: $background-color;
     font-family: "Lato", sans-serif;
 
     label:hover {
@@ -37,10 +37,12 @@ nav {
         letter-spacing: 3px;
         font-weight: bold;
         font-size: 14px;
+        transition: all 0.3s ease;
     }
 
     a:hover {
         color: lime;
+        padding-left: 15px;
     }
 }
 

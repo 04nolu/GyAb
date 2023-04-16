@@ -1,6 +1,6 @@
 footer {
     font-family: "Lato", sans-serif;
-    background-color: #24262b;
+    background-color: $background-color;
     line-height: 1.5;
     padding: 70px 0;
 }
@@ -31,7 +31,8 @@ ul {
         font-weight: 500;
         position: relative;
     }
-    h4:before{
+
+    h4:before {
         content: '';
         position: absolute;
         left: 0;
@@ -41,12 +42,14 @@ ul {
         width: 50px;
         border-radius: 5px;
     }
-    ul{
-        li:not(:last-child){
+
+    ul {
+        li:not(:last-child) {
             margin-bottom: 10px;
         }
-        li{
-            a{
+
+        li {
+            a {
                 font-size: 16px;
                 text-transform: capitalize;
                 text-decoration: none;
@@ -55,7 +58,8 @@ ul {
                 display: block;
                 transition: all 0.3s ease;
             }
-            a:hover{
+
+            a:hover {
                 color: white;
                 padding-left: 5px;
             }
@@ -63,15 +67,15 @@ ul {
     }
 }
 
-@media (max-width: 768px){
-    .footerCol{
+@media (max-width: 768px) {
+    .footerCol {
         width: 50%;
         margin-bottom: 30px;
     }
 }
 
-@media (max-width: 480px){
-    .footerCol{
+@media (max-width: 480px) {
+    .footerCol {
         width: 100%;
     }
 }

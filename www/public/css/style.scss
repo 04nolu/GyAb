@@ -4,10 +4,22 @@
   box-sizing: border-box;
 }
 
-//Imports
-@import url("nav.css");
-@import url("footer.css");
+/* $background-color: #25262b; */
+$background-color: rgb(5, 5, 122);
 
+//Imports
+@import "nav";
+@import "footer";
+
+body {
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
 
 img {
   float: center;
