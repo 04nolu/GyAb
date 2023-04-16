@@ -5,13 +5,15 @@
 }
 
 /* $background-color: #25262b; */
+/* $background-color: rgb(5, 5, 122); */
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: rgb(5, 5, 122);
+  background-color: #393a3d;
   font-family: "Lato", sans-serif;
+  /*   background: linear-gradient(60deg, $nav-background-color, #25262b, green); */
 }
 nav label:hover {
   color: lime;
@@ -22,7 +24,7 @@ nav label:hover {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -39,12 +41,11 @@ nav label:hover {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
   transition: all 0.3s ease;
 }
 .nav-links a:hover {
   color: lime;
-  padding-left: 15px;
 }
 
 .burger {
@@ -111,7 +112,7 @@ nav label:hover {
 
 footer {
   font-family: "Lato", sans-serif;
-  background-color: rgb(5, 5, 122);
+  background-color: #393a3d;
   line-height: 1.5;
   padding: 70px 0;
 }
