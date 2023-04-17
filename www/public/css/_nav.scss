@@ -5,10 +5,10 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: $background-color;
-    font-family: "Lato", sans-serif;
+    background-color: $nav-background-color;
+    font-family: $font;
 
-  /*   background: linear-gradient(60deg, $nav-background-color, #25262b, green); */
+    /*   background: linear-gradient(60deg, $nav-background-color, #25262b, green); */
 
     label:hover {
         color: lime;

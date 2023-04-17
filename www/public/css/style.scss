@@ -6,7 +6,9 @@
 
 /* $background-color: #25262b; */
 /* $background-color: rgb(5, 5, 122); */
-$background-color: #393a3d;
+/* $background-color: #393a3d; */
+$background-color: #1B212C;
+$font: "Lato", sans-serif;
 
 //Imports
 @import "nav";
@@ -16,10 +18,13 @@ body {
   min-height: 150vh;
   display: flex;
   flex-direction: column;
+  /* background-color: $background-color; */
+  background: radial-gradient(circle, #24246e, #06051f);
 }
 
 main {
   flex-grow: 1;
+  color: white;
 }
 
 img {

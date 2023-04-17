@@ -1,8 +1,9 @@
 footer {
     font-family: $font;
-    background-color: $nav-background-color;
-    line-height: 1.5;
-    padding: 70px 0;
+    background-color: $background-color;
+    display: flexbox;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footerContainer {
@@ -21,7 +22,6 @@ ul {
 
 .footerCol {
     width: 25%;
-    padding: 0 15px;
 
     h4 {
         font-size: 20px;

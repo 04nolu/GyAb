@@ -6,12 +6,13 @@
 
 /* $background-color: #25262b; */
 /* $background-color: rgb(5, 5, 122); */
+/* $background-color: #393a3d; */
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #393a3d;
+  background-color: rgb(5, 5, 122);
   font-family: "Lato", sans-serif;
   /*   background: linear-gradient(60deg, $nav-background-color, #25262b, green); */
 }
@@ -112,7 +113,7 @@ nav label:hover {
 
 footer {
   font-family: "Lato", sans-serif;
-  background-color: #393a3d;
+  background-color: rgb(5, 5, 122);
   line-height: 1.5;
   padding: 70px 0;
 }
@@ -136,7 +137,7 @@ ul {
   padding: 0 15px;
 }
 .footerCol h4 {
-  font-size: 18px;
+  font-size: 20px;
   color: white;
   text-transform: capitalize;
   margin-bottom: 30px;
@@ -157,12 +158,11 @@ ul {
   margin-bottom: 10px;
 }
 .footerCol ul li a {
-  font-size: 16px;
+  font-size: 18px;
   text-transform: capitalize;
   text-decoration: none;
   font-weight: 300;
   color: #bbbbbb;
-  display: block;
   transition: all 0.3s ease;
 }
 .footerCol ul li a:hover {
@@ -185,10 +185,13 @@ body {
   min-height: 150vh;
   display: flex;
   flex-direction: column;
+  /* background-color: $background-color; */
+  background: radial-gradient(circle, #24246e, #06051f);
 }
 
 main {
   flex-grow: 1;
+  color: white;
 }
 
 img {
