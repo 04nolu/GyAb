@@ -32,7 +32,7 @@ nav label:hover {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 35%;
 }
 .nav-links li {
   list-style: none;
@@ -123,10 +123,6 @@ footer {
   margin: auto;
 }
 
-ul {
-  list-style: none;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -141,7 +137,7 @@ ul {
   color: white;
   text-transform: capitalize;
   margin-bottom: 30px;
-  font-weight: 500;
+  font-weight: bold;
   position: relative;
 }
 .footerCol h4:before {
@@ -154,6 +150,9 @@ ul {
   width: 50px;
   border-radius: 5px;
 }
+.footerCol ul {
+  list-style: none;
+}
 .footerCol ul li:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -161,7 +160,7 @@ ul {
   font-size: 18px;
   text-transform: capitalize;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: bold;
   color: #bbbbbb;
   transition: all 0.3s ease;
 }

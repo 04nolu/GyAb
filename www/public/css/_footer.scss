@@ -10,14 +10,12 @@ footer {
     margin: auto;
 }
 
-ul {
-    list-style: none;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
 }
+
+
 
 .footerCol {
     width: 25%;
@@ -28,7 +26,7 @@ ul {
         color: white;
         text-transform: capitalize;
         margin-bottom: 30px;
-        font-weight: 500;
+        font-weight: bold;
         position: relative;
     }
 
@@ -44,6 +42,8 @@ ul {
     }
 
     ul {
+        list-style: none;
+
         li:not(:last-child) {
             margin-bottom: 10px;
         }
@@ -53,7 +53,7 @@ ul {
                 font-size: 18px;
                 text-transform: capitalize;
                 text-decoration: none;
-                font-weight: 300;
+                font-weight: bold;
                 color: #bbbbbb;
                 transition: all 0.3s ease;
             }
