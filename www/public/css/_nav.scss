@@ -9,7 +9,6 @@ nav {
     background-color: $nav-background-color;
     /* background: $background; */
     font-family: $font;
-    position: relative;
     /*   background: linear-gradient(60deg, $nav-background-color, #25262b, green); */
 
     label:hover {
@@ -30,26 +29,17 @@ nav {
     display: flex;
     justify-content: space-around;
     height: 100%;
-    position: relative;
+
     li {
         list-style: none;
-        margin-right: 10%;
-        height: 100%;
-        display: inline-block;
-        position: relative;
-    }
+        margin-right: 12%;
 
-    li:hover{
-        border-bottom: 2px solid red;
-    }
-
-    li hr {
-        width: 100%;
-        margin: auto;
+        &:hover {
+            border-bottom: 3px solid red;
+        }
     }
 
     a {
-        position: relative;
         color: white;
         text-decoration: none;
         letter-spacing: 3px;
@@ -58,11 +48,11 @@ nav {
         transition: all 0.3s ease;
         display: inline-block;
         height: 100%;
-        margin-top: 3vh;
-    }
+        padding-top: 2.5vh;
 
-    a:hover {
-        color: lime;
+        &:hover {
+            color: lime;
+        }
     }
 }
 
@@ -79,12 +69,6 @@ nav {
         transition: 0.5s ease-in-out;
     }
 }
-
-/* @media screen and (max-width: 1024px) {
-    .nav-links {
-        width: 60%;
-    }
-} */
 
 @media screen and (max-width: 768px) {
     .nav-links {

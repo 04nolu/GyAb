@@ -16,7 +16,6 @@ nav {
   background-color: rgb(5, 5, 122);
   /* background: $background; */
   font-family: "Lato", sans-serif;
-  position: relative;
   /*   background: linear-gradient(60deg, $nav-background-color, #25262b, green); */
 }
 nav label:hover {
@@ -36,24 +35,15 @@ nav label:hover {
   display: flex;
   justify-content: space-around;
   height: 100%;
-  position: relative;
 }
 .nav-links li {
   list-style: none;
-  margin-right: 10%;
-  height: 100%;
-  display: inline-block;
-  position: relative;
+  margin-right: 12%;
 }
 .nav-links li:hover {
-  border-bottom: 2px solid red;
-}
-.nav-links li hr {
-  width: 100%;
-  margin: auto;
+  border-bottom: 3px solid red;
 }
 .nav-links a {
-  position: relative;
   color: white;
   text-decoration: none;
   letter-spacing: 3px;
@@ -62,7 +52,7 @@ nav label:hover {
   transition: all 0.3s ease;
   display: inline-block;
   height: 100%;
-  margin-top: 3vh;
+  padding-top: 2.5vh;
 }
 .nav-links a:hover {
   color: lime;
@@ -81,11 +71,6 @@ nav label:hover {
   transition: 0.5s ease-in-out;
 }
 
-/* @media screen and (max-width: 1024px) {
-    .nav-links {
-        width: 60%;
-    }
-} */
 @media screen and (max-width: 768px) {
   .nav-links {
     position: absolute;
