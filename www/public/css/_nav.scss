@@ -5,10 +5,11 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    /* background-color: $nav-background-color; */
-    background: $background;
+    height: 8vh;
+    background-color: $nav-background-color;
+    /* background: $background; */
     font-family: $font;
-
+    position: relative;
     /*   background: linear-gradient(60deg, $nav-background-color, #25262b, green); */
 
     label:hover {
@@ -28,23 +29,36 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-
+    height: 100%;
+    position: relative;
     li {
         list-style: none;
         margin-right: 10%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
     }
-    li hr{
-        width: 10%;
+
+    li:hover{
+        border-bottom: 2px solid red;
+    }
+
+    li hr {
+        width: 100%;
         margin: auto;
     }
 
     a {
+        position: relative;
         color: white;
         text-decoration: none;
         letter-spacing: 3px;
         font-weight: bold;
         font-size: 18px;
         transition: all 0.3s ease;
+        display: inline-block;
+        height: 100%;
+        margin-top: 3vh;
     }
 
     a:hover {
