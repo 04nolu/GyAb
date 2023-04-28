@@ -40,8 +40,15 @@ nav label:hover {
   list-style: none;
   margin-right: 12%;
 }
-.nav-links li:hover {
+.nav-links li::after {
+  display: block;
+  content: "";
   border-bottom: 3px solid red;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+.nav-links li:hover::after {
+  transform: scaleX(1);
 }
 .nav-links a {
   color: white;
