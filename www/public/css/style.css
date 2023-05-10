@@ -51,7 +51,7 @@ nav label:hover {
   transform: scaleX(1);
 }
 .nav-links a {
-  color: white;
+  color: #bbbbbb;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -62,7 +62,7 @@ nav label:hover {
   padding-top: 2.5vh;
 }
 .nav-links a:hover {
-  color: lime;
+  color: white;
 }
 
 .burger {
