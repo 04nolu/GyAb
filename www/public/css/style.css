@@ -5,30 +5,26 @@
 }
 
 /* $background-color: #25262b; */
-/* $background-color: rgb(5, 5, 122); */
-/* $background-color: #393a3d; */
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
-  height: 8vh;
+  /* min-height: 8vh; */
+  height: 4rem;
   background-color: rgb(5, 5, 122);
-  /* background: $background; */
   font-family: "Lato", sans-serif;
-  /*   background: linear-gradient(60deg, $nav-background-color, #25262b, green); */
-}
-nav label:hover {
-  color: lime;
-  cursor: pointer;
 }
 
 .logo {
-  color: white;
+  color: #bbbbbb;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 24px;
   font-weight: bold;
+}
+.logo:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -56,10 +52,10 @@ nav label:hover {
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 18px;
-  transition: all 0.3s ease;
   display: inline-block;
   height: 100%;
-  padding-top: 2.5vh;
+  padding-top: 1.25rem;
+  transition: all 0.3s ease;
 }
 .nav-links a:hover {
   color: white;
@@ -191,20 +187,20 @@ footer {
     width: 100%;
   }
 }
-html {
-  font-size: 62.5%;
-}
-
+/* html {
+  font-size: 62.5%;   
+} */
 body {
   min-height: 150vh;
   display: flex;
   flex-direction: column;
-  background-color: #1B212C;
-  /*   background: radial-gradient(circle, #24246e, #06051f); */
+  /* background-color: $background-color; */
+  background: radial-gradient(circle, #24246e, #06051f);
 }
 
 main {
   flex-grow: 1;
+  /*   font-size: 1.5rem; */
   color: white;
 }
 

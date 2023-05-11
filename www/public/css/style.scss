@@ -4,32 +4,35 @@
   box-sizing: border-box;
 }
 
-/* $background-color: #25262b; */
-/* $background-color: rgb(5, 5, 122); */
-/* $background-color: #393a3d; */
+/* $background-color: #25262b; */ //Snygg grå färg
+
+$nav-background-color: rgb(5, 5, 122);
 $background-color: #1B212C;
-$background: radial-gradient(circle, #25262b, rgb(5, 5, 122));
+$navs-background-color: radial-gradient(circle, #25262b, rgb(5, 5, 122));
 $font: "Lato", sans-serif;
+
 $navfootColor: #bbbbbb;
+$navfootHover: white;
 
 //Imports
 @import "nav";
 @import "footer";
 
-html {
-  font-size: 62.5%;
-}
+/* html {
+  font-size: 62.5%;   
+} */
 
 body {
   min-height: 150vh;
   display: flex;
   flex-direction: column;
-  background-color: $background-color;
-  /*   background: radial-gradient(circle, #24246e, #06051f); */
+  /* background-color: $background-color; */
+  background: radial-gradient(circle, #24246e, #06051f);
 }
 
 main {
   flex-grow: 1;
+  /*   font-size: 1.5rem; */
   color: white;
 }
 

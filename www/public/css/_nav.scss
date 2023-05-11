@@ -1,28 +1,24 @@
-$nav-background-color: rgb(5, 5, 122);
-
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
-    height: 8vh;
+    /* min-height: 8vh; */
+    height: 4rem;
     background-color: $nav-background-color;
-    /* background: $background; */
     font-family: $font;
-    /*   background: linear-gradient(60deg, $nav-background-color, #25262b, green); */
-
-    label:hover {
-        color: lime;
-        cursor: pointer;
-    }
 }
 
 .logo {
-    color: white;
+    color: $navfootColor;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 24px;
     font-weight: bold;
+
+    &:hover {
+        color: $navfootHover;
+        cursor: pointer;
+    }
 }
 
 .nav-links {
@@ -53,13 +49,13 @@ nav {
         letter-spacing: 3px;
         font-weight: bold;
         font-size: 18px;
-        transition: all 0.3s ease;
         display: inline-block;
         height: 100%;
-        padding-top: 2.5vh;
+        padding-top: 1.25rem;
+        transition: all 0.3s ease;
 
         &:hover {
-            color: white;
+            color: $navfootHover;
         }
     }
 }
