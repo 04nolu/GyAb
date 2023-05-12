@@ -1,8 +1,9 @@
 nav {
     display: flex;
+    /*     position: sticky;
+    top: 0; */
     justify-content: space-around;
     align-items: center;
-    /* min-height: 8vh; */
     height: 4rem;
     background-color: $nav-background-color;
     font-family: $font;
@@ -12,7 +13,7 @@ nav {
     color: $navfootColor;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 
     &:hover {
@@ -28,11 +29,17 @@ nav {
 
     li {
         list-style: none;
-        margin-right: 12%;
+/*         margin-right: 6.5vh; */
+        width: 100%;
+
+        &:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
 
         &::after {
             display: block;
             content: '';
+            margin-top: -3px;
             border-bottom: 3px solid red;
             transform: scaleX(0);
             transition: transform 0.2s ease-in-out;
@@ -47,8 +54,9 @@ nav {
         color: $navfootColor;
         text-decoration: none;
         letter-spacing: 3px;
-        font-weight: bold;
-        font-size: 18px;
+        padding: 4vh;
+        /* font-weight: bold; */
+        font-size: 1.2rem;
         display: inline-block;
         height: 100%;
         padding-top: 1.25rem;

@@ -7,23 +7,24 @@
 /* $background-color: #25262b; */
 nav {
   display: flex;
+  /*     position: sticky;
+  top: 0; */
   justify-content: space-around;
   align-items: center;
-  /* min-height: 8vh; */
   height: 4rem;
   background-color: rgb(5, 5, 122);
   font-family: "Lato", sans-serif;
 }
 
 .logo {
-  color: #bbbbbb;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 .logo:hover {
-  color: white;
+  color: #bbbbbb;
   cursor: pointer;
 }
 
@@ -34,11 +35,16 @@ nav {
 }
 .nav-links li {
   list-style: none;
-  margin-right: 12%;
+  /*         margin-right: 6.5vh; */
+  width: 100%;
+}
+.nav-links li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .nav-links li::after {
   display: block;
   content: "";
+  margin-top: -3px;
   border-bottom: 3px solid red;
   transform: scaleX(0);
   transition: transform 0.2s ease-in-out;
@@ -47,18 +53,19 @@ nav {
   transform: scaleX(1);
 }
 .nav-links a {
-  color: #bbbbbb;
+  color: white;
   text-decoration: none;
   letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 18px;
+  padding: 4vh;
+  /* font-weight: bold; */
+  font-size: 1.2rem;
   display: inline-block;
   height: 100%;
   padding-top: 1.25rem;
   transition: all 0.3s ease;
 }
 .nav-links a:hover {
-  color: white;
+  color: #bbbbbb;
 }
 
 .burger {
@@ -168,11 +175,11 @@ footer {
   text-transform: capitalize;
   text-decoration: none;
   font-weight: bold;
-  color: #bbbbbb;
+  color: white;
   transition: all 0.3s ease;
 }
 .footerCol ul li a:hover {
-  color: white;
+  color: #bbbbbb;
   padding-left: 5px;
 }
 

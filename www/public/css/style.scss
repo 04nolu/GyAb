@@ -4,15 +4,16 @@
   box-sizing: border-box;
 }
 
-/* $background-color: #25262b; */ //Snygg grå färg
+/* $background-color: #25262b; */
+//Snygg grå färg
 
 $nav-background-color: rgb(5, 5, 122);
 $background-color: #1B212C;
 $navs-background-color: radial-gradient(circle, #25262b, rgb(5, 5, 122));
 $font: "Lato", sans-serif;
 
-$navfootColor: #bbbbbb;
-$navfootHover: white;
+$navfootHover: #bbbbbb;
+$navfootColor: white;
 
 //Imports
 @import "nav";
