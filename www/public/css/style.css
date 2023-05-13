@@ -17,14 +17,14 @@ nav {
 }
 
 .logo {
-  color: white;
+  color: #bbbbbb;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 1.5rem;
   font-weight: bold;
 }
 .logo:hover {
-  color: #bbbbbb;
+  color: white;
   cursor: pointer;
 }
 
@@ -53,11 +53,11 @@ nav {
   transform: scaleX(1);
 }
 .nav-links a {
-  color: white;
+  color: #bbbbbb;
   text-decoration: none;
   letter-spacing: 3px;
   padding: 4vh;
-  /* font-weight: bold; */
+  font-weight: bold;
   font-size: 1.2rem;
   display: inline-block;
   height: 100%;
@@ -65,7 +65,7 @@ nav {
   transition: all 0.3s ease;
 }
 .nav-links a:hover {
-  color: #bbbbbb;
+  color: white;
 }
 
 .burger {
@@ -175,11 +175,11 @@ footer {
   text-transform: capitalize;
   text-decoration: none;
   font-weight: bold;
-  color: white;
+  color: #bbbbbb;
   transition: all 0.3s ease;
 }
 .footerCol ul li a:hover {
-  color: #bbbbbb;
+  color: white;
   padding-left: 5px;
 }
 
