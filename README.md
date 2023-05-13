@@ -1,3 +1,14 @@
+Välkommen till mitt gymnasiearbete!
+
+Detta projektet ligger i en LEMP miljö, det finns en "docker-lemp.tag.gz" som du kan packa upp vid eventuella problem.
+
+
+
+
+
+
+
+
 ## Docker-compose LEMP
 ### Inkluderar
 - nginx -> localhost:80
