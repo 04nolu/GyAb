@@ -1,25 +1,22 @@
 footer {
-    font-family: $font;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: $nav-background-color;
+    font-family: $font;
     line-height: 1.5;
-    padding: 70px 0;
-}
-
-.footerContainer {
-    max-width: 1170px;
-    margin: auto;
+/*     padding: 70px 0; */
 }
 
 .row {
+    align-items: center;
     display: flex;
-    flex-wrap: wrap;
 }
 
-
-
 .footerCol {
-    width: 25%;
-    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 6rem 3rem 6rem;
 
     h4 {
         font-size: 20px;
@@ -49,8 +46,9 @@ footer {
         }
 
         li {
+            width: 100%;
             a {
-                font-size: 18px;
+                font-size: 1.1rem;
                 /* text-transform: capitalize; */
                 text-decoration: none;
                 font-weight: bold;
@@ -61,6 +59,7 @@ footer {
             a:hover {
                 color: $navfootHover;
                 padding-left: 5px;
+                margin: 0;
             }
         }
     }

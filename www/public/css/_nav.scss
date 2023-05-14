@@ -1,7 +1,7 @@
 nav {
     display: flex;
-    /*     position: sticky;
-    top: 0; */
+    position: sticky;
+    top: 0;
     justify-content: space-around;
     align-items: center;
     height: 4rem;
@@ -29,12 +29,12 @@ nav {
 
     li {
         list-style: none;
-/*         margin-right: 6.5vh; */
+        /*         margin-right: 6.5vh; */
         width: 100%;
         transition: all 0.2s;
 
         &:hover {
-            background-color: rgba(255,255,255,0.2);
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
         &::after {
@@ -55,9 +55,9 @@ nav {
         color: $navfootColor;
         text-decoration: none;
         letter-spacing: 3px;
-        padding: 4vh;
+        padding: 3.5vh;
         font-weight: bold;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         display: inline-block;
         height: 100%;
         padding-top: 1.25rem;

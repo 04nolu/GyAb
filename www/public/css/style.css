@@ -7,8 +7,8 @@
 /* $background-color: #25262b; */
 nav {
   display: flex;
-  /*     position: sticky;
-  top: 0; */
+  position: sticky;
+  top: 0;
   justify-content: space-around;
   align-items: center;
   height: 4rem;
@@ -57,9 +57,9 @@ nav {
   color: #bbbbbb;
   text-decoration: none;
   letter-spacing: 3px;
-  padding: 4vh;
+  padding: 3.5vh;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   display: inline-block;
   height: 100%;
   padding-top: 1.25rem;
@@ -127,25 +127,24 @@ nav {
 }
 
 footer {
-  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: rgb(5, 5, 122);
+  font-family: "Lato", sans-serif;
   line-height: 1.5;
-  padding: 70px 0;
-}
-
-.footerContainer {
-  max-width: 1170px;
-  margin: auto;
+  /*     padding: 70px 0; */
 }
 
 .row {
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .footerCol {
-  width: 25%;
-  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 6rem 3rem 6rem;
 }
 .footerCol h4 {
   font-size: 20px;
@@ -171,8 +170,11 @@ footer {
 .footerCol ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+.footerCol ul li {
+  width: 100%;
+}
 .footerCol ul li a {
-  font-size: 18px;
+  font-size: 1.1rem;
   /* text-transform: capitalize; */
   text-decoration: none;
   font-weight: bold;
@@ -182,6 +184,7 @@ footer {
 .footerCol ul li a:hover {
   color: white;
   padding-left: 5px;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -210,6 +213,9 @@ main {
   flex-grow: 1;
   /*   font-size: 1.5rem; */
   color: white;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 10rem 1rem 10rem;
 }
 
 img {
