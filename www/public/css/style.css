@@ -37,6 +37,7 @@ nav {
   list-style: none;
   /*         margin-right: 6.5vh; */
   width: 100%;
+  transition: all 0.2s;
 }
 .nav-links li:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -149,7 +150,7 @@ footer {
 .footerCol h4 {
   font-size: 20px;
   color: white;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   margin-bottom: 30px;
   font-weight: bold;
   position: relative;
@@ -172,7 +173,7 @@ footer {
 }
 .footerCol ul li a {
   font-size: 18px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   text-decoration: none;
   font-weight: bold;
   color: #bbbbbb;
