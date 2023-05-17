@@ -1,7 +1,4 @@
 footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background-color: $nav-background-color;
     font-family: $font;
     line-height: 1.5;
@@ -10,18 +7,17 @@ footer {
 
 .row {
     align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footerCol {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 6rem 3rem 6rem;
+    margin: 2rem 4rem 3rem 6rem;
+    border: 1px solid green;
 
     h4 {
         font-size: 20px;
         color: white;
-        /* text-transform: capitalize; */
         margin-bottom: 30px;
         font-weight: bold;
         position: relative;

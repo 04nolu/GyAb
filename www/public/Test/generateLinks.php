@@ -16,7 +16,7 @@ if (isset($folderName)) {
     sort($fileNames);
 
     foreach ($fileNames as $fileName) {
-        echo '<a style= text-transform: capitalize; href="' . $folderName . '/' . $fileName . '.html">' . $fileName . '</a><br>';
+        echo '<a style="text-transform: capitalize"; href="' . $folderName . '/' . $fileName . '.html">' . $fileName . '</a><br>';
     }
 }
 ?>
