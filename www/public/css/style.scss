@@ -38,6 +38,15 @@ main {
   margin: 1rem 10rem 1rem 10rem;
 }
 
+.links {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: $navfootColor;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
 img {
   float: center;
   width: 500px;

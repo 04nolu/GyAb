@@ -10,13 +10,14 @@ if (isset($folderName)) {
         }
     }
 
-    echo ($folderName);
-    echo ("<br> <br>");
+    echo ("<h4>" . basename($folderName) . "</h4>");
+    echo ("<br>");
 
-    sort($fileNames);
+    natsort($fileNames);
 
     foreach ($fileNames as $fileName) {
-        echo '<a style="text-transform: capitalize"; href="' . $folderName . '/' . $fileName . '.html">' . $fileName . '</a><br>';
+        echo '<a class="links" href="' . $folderName . '/' . $fileName . '.html">' . $fileName . '</a><br>';
     }
+    echo ("<br> <br>");
 }
 ?>
