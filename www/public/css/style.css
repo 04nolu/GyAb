@@ -7,13 +7,13 @@
 /* $background-color: #25262b; */
 nav {
   display: flex;
+  background-color: rgb(5, 5, 122);
+  font-family: "Lato", sans-serif;
   position: sticky;
   top: 0;
   justify-content: space-around;
   align-items: center;
   height: 4rem;
-  background-color: rgb(5, 5, 122);
-  font-family: "Lato", sans-serif;
 }
 
 .logo {
@@ -127,24 +127,19 @@ nav {
 }
 
 footer {
+  display: flex;
   background-color: rgb(5, 5, 122);
   font-family: "Lato", sans-serif;
   line-height: 1.5;
-  /*     padding: 70px 0; */
-  align-items: center;
+  justify-content: center;
   /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  column-gap: -40rem; */
-  display: flex;
-  justify-content: center;
+  grid-template-columns: repeat(3, 1fr); */
 }
 
 .footerCol {
-  /* margin: 2rem 1rem 3rem; */
-  /* margin: 2rem 4rem 3rem 6rem; */
-  border: 1px solid green;
-  margin: 3rem;
+  margin: 1rem 0 2rem;
+  padding: 2rem;
+  flex: 0.2;
 }
 .footerCol h4 {
   font-size: 20px;
@@ -171,16 +166,16 @@ footer {
 }
 .footerCol ul li a {
   font-size: 1.1rem;
-  /* text-transform: capitalize; */
   text-decoration: none;
   font-weight: bold;
   color: #bbbbbb;
   position: relative;
   transition: all 0.3s ease;
+  padding: 0.5rem 0 0.5rem 0;
 }
 .footerCol ul li a:hover {
   color: white;
-  transform: translateX(10px);
+  padding-left: 0.3rem;
 }
 
 @media (max-width: 768px) {
@@ -198,7 +193,9 @@ footer {
   font-size: 62.5%;   
 } */
 body {
-  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   /* background-color: $background-color; */
   background: radial-gradient(circle, #24246e, #06051f);
 }

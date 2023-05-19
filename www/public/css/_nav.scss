@@ -1,12 +1,12 @@
 nav {
     display: flex;
+    background-color: $nav-background-color;
+    font-family: $font;
     position: sticky;
     top: 0;
     justify-content: space-around;
     align-items: center;
     height: 4rem;
-    background-color: $nav-background-color;
-    font-family: $font;
 }
 
 .logo {

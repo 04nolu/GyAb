@@ -24,7 +24,9 @@ $navfootHover: white;
 } */
 
 body {
-  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   /* background-color: $background-color; */
   background: radial-gradient(circle, #24246e, #06051f);
 }
