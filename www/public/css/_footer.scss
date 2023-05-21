@@ -10,7 +10,7 @@ footer {
 }
 
 .footerCol {
-    margin: 1rem 0 1rem; 
+    margin: 1rem 0 1rem;
     padding: 3vh;
     flex: 0.2;
 
@@ -54,6 +54,10 @@ footer {
             a:hover {
                 color: $navfootHover;
                 padding-left: 0.3rem;
+            }
+
+            #aGolden:hover {
+                color: gold;
             }
         }
     }
