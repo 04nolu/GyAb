@@ -63,7 +63,7 @@ nav {
   display: inline-block;
   height: 100%;
   padding-top: 1.25rem;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in-out;
 }
 .nav-links a:hover {
   color: white;
@@ -138,7 +138,7 @@ footer {
 }
 
 .footerCol {
-  margin: 1rem 0 1rem;
+  margin: 1rem 0;
   padding: 3vh;
   flex: 0.2;
 }
@@ -171,7 +171,7 @@ footer {
   font-weight: bold;
   color: #bbbbbb;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in-out;
   padding: 3.5% 0;
 }
 .footerCol ul li a:hover {
@@ -213,38 +213,76 @@ body {
 }
 
 main {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   flex-grow: 1;
   /*   font-size: 1.5rem; */
   color: white;
-  align-items: center;
   text-align: center;
-  margin: 1rem 10rem;
-  padding: 3vh 3vh;
+  margin: 1rem auto;
+  padding: 3vh;
+  min-width: 50rem;
+  max-width: 80rem;
   background: radial-gradient(circle, #543894, #633934);
+  border: 1rem solid radial-gradient(circle, #24246e, #06051f);
   border-radius: 2%;
 }
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+main p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
 
-.links {
+.divPro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.divPro .divProjects {
+  padding: 1vh 3vh 0;
+  flex: 0.2;
+}
+.divPro .divProjects ul {
+  list-style: none;
+}
+.divPro .divProjects ul li {
+  padding: 0 3vh;
+}
+.divPro .divProjects ul li a {
   text-decoration: none;
   text-transform: capitalize;
   color: #bbbbbb;
   font-weight: bold;
   font-size: 1.1rem;
-  line-height: 1.2;
+  padding: 3.5% 0;
+  /* line-height: 1.2; */
+  transition: all 0.2s ease-in-out;
 }
-.links:hover {
-  padding-left: 5px;
+.divPro .divProjects ul li a:hover {
+  padding-left: 0.3rem;
   color: white;
 }
 
 img {
-  float: center;
+  /* float: center;
   width: 25rem;
   height: 25rem;
+  object-fit: cover;
+  margin: 2vh auto; */
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  max-width: 400px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 3vh;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2%;
+  box-shadow: 2%;
 }
 
 @media screen and (max-width: 768px) {

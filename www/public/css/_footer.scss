@@ -10,7 +10,7 @@ footer {
 }
 
 .footerCol {
-    margin: 1rem 0 1rem;
+    margin: 1rem 0;
     padding: 3vh;
     flex: 0.2;
 
@@ -47,7 +47,7 @@ footer {
                 font-weight: bold;
                 color: $navfootColor;
                 position: relative;
-                transition: all 0.3s ease;
+                transition: all 0.2s ease-in-out;
                 padding: 3.5% 0;
             }
 

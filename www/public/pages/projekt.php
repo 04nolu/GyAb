@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8" />
@@ -11,14 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
 
     <script defer src="../js/nav.js"></script>
+    <script defer src="../js/rick.js"></script>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
     <link rel="manifest" href="../img/favicon/site.webmanifest">
 
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Projekt - Ludvig Noriander</title>
+    <title>Gymnasiearbete - Ludvig Noriander</title>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
             <li><a href="index.html">Hem</a></li>
             <li><a href="om.html">Om</a></li>
             <li><a href="gymnasiearbete.html">Gymnasiearbete</a></li>
-            <li><a href="../Test/testing.php">Projekt</a></li>
+            <li><a href="projekt.php">Projekt</a></li>
         </ul>
 
         <div class="burger">
@@ -42,44 +43,77 @@
 
 
     <main>
-        <h1>TEST</h1>
-        <br>
+        <h1>Ettan</h1>
+        <p>(Jag hade egentligen också lagt in det jag 
+            också gjort i trean men det hade blivit för tidskrävande)</p>
+
         <?php
-        $folderNames = ['../inc/Projekt/Ettan/Webbutveckling 1/CSS 1', '../inc/Projekt/Ettan/Webbutveckling 1/CSS 2'];
+        echo ('<div class="divPro">');
+
+        $folderNames = [
+            '../inc/Projekt/Ettan/Webbutveckling 1/CSS 1',
+            '../inc/Projekt/Ettan/Webbutveckling 1/CSS 2'
+        ];
 
         foreach ($folderNames as $folderName) {
             include '../inc/generateLinks.php';
         }
+
+        $folderNames = [
+            '../inc/Projekt/Ettan/Webbutveckling 1/Projekt 1',
+            '../inc/Projekt/Ettan/Webbutveckling 1/Projekt 1/HTML 1',
+            '../inc/Projekt/Ettan/Webbutveckling 1/Projekt 1/HTML 2',
+            '../inc/Projekt/Ettan/Webbutveckling 1/Projekt 1/HTML 3'
+        ];
+
+        foreach ($folderNames as $folderName) {
+            include '../inc/generateLinks.php';
+        }
+
+        $folderNames = [
+            '../inc/Projekt/Ettan/Webbutveckling 1/Snabbtest/Snabbtest 1',
+            '../inc/Projekt/Ettan/Webbutveckling 1/Snabbtest/Snabbtest 2',
+            '../inc/Projekt/Ettan/Webbutveckling 1/Snabbtest/Snabbtest 3',
+            '../inc/Projekt/Ettan/Webbutveckling 1/Snabbtest/Snabbtest 4'
+        ];
+
+        foreach ($folderNames as $folderName) {
+            include '../inc/generateLinks.php';
+        }
+
+        echo ('</div>');
         ?>
     </main>
 
 
     <footer>
         <div class="footerCol">
-            <h4>Test</h4>
+            <h4>Sociala Medier</h4>
             <ul>
-                <li><a href="#">Lorem 1</a></li>
-                <li><a href="#">Ipsum 2</a></li>
-                <li><a href="#">Lorem 3</a></li>
+                <li><a href="https://www.youtube.com/Tarzoq">YouTube</a></li>
+                <li><a href="https://www.twitch.tv/Tarzoq">Twitch</a></li>
+                <li><a href="https://steamcommunity.com/id/Tarzoq/">Steam</a></li>
             </ul>
         </div>
         <div class="footerCol">
             <h4>Dokumentation</h4>
             <ul>
-                <li><a href="#">Gymnasiearbetes-rapport</a></li>
-                <li><a href="#">Ipsum 2</a></li>
+                <li><a target="_blank" href="https://docs.google.com/document/d/1lrB25XbIbjTIBiGWHONGTtybTAH9td-TJE27IhIUxX8/edit?usp=sharing">Gymnasiearbetes-rapport</a></li>
+                <li><a target="_blank" href="https://docs.google.com/spreadsheets/d/1F2HWAkLDCe5jweN7dY0g8mldiBOjsFrSqQo5Ki_rfTI/edit?usp=sharing">Arbetad tid</a></li>
                 <li><a target="_blank" href="https://github.com/04nolu/GyAb">GitHub</a></li>
             </ul>
         </div>
         <div class="footerCol">
             <h4>Kontakta mig</h4>
             <ul>
-                <li><a>Ludvig Noriander</a></li>
-                <li><a>+46 73 627 40 07</a></li>
-                <li><a>04nolu@skola.engelholm.se</a></li>
+                <li><a id="aGolden" href="#">Ludvig Noriander</a></li>
+                <li><a href="tel:+46736274007">+46 73 627 40 07</a></li>
+                <li><a href="mailto:04nolu@skola.engelholm.se">04nolu@skola.engelholm.se</a></li>
             </ul>
         </div>
-        <!--    <p>Denna hemsida hostar all sin källkod på GitHub</p> -->
+        <div id="copyfight">
+            <p>© Copyfight 2020-2023 Ludvig Noriander | All Rights Deserved</p>
+        </div>
     </footer>
 
 </body>
