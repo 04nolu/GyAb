@@ -27,7 +27,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* background-color: $background-color; */
   background: radial-gradient(circle, #24246e, #06051f);
 }
 
@@ -41,8 +40,7 @@ main {
   padding: 3vh;
   min-width: 50rem;
   max-width: 80rem;
-  background: radial-gradient(circle, #543894, #633934);
-  border: 1rem solid radial-gradient(circle, #24246e, #06051f);
+  background-color: #462345;
   border-radius: 2%;
 
   h1 {

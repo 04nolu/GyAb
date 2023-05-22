@@ -44,7 +44,7 @@
 
     <main>
         <h1>Ettan</h1>
-        <p>(Jag hade egentligen också lagt in det jag 
+        <p>(Jag hade egentligen också lagt in det jag
             också gjort i trean men det hade blivit för tidskrävande)</p>
 
         <?php
@@ -98,8 +98,10 @@
         <div class="footerCol">
             <h4>Dokumentation</h4>
             <ul>
-                <li><a target="_blank" href="https://docs.google.com/document/d/1lrB25XbIbjTIBiGWHONGTtybTAH9td-TJE27IhIUxX8/edit?usp=sharing">Gymnasiearbetes-rapport</a></li>
-                <li><a target="_blank" href="https://docs.google.com/spreadsheets/d/1F2HWAkLDCe5jweN7dY0g8mldiBOjsFrSqQo5Ki_rfTI/edit?usp=sharing">Arbetad tid</a></li>
+                <li><a target="_blank" href="https://docs.google.com/document/d/1lrB25XbIbjTIBiGWHONGTtybTAH9td-TJE27IhIUxX8/edit?usp=sharing">Gymnasiearbetes-rapport</a>
+                </li>
+                <li><a target="_blank" href="https://docs.google.com/spreadsheets/d/1F2HWAkLDCe5jweN7dY0g8mldiBOjsFrSqQo5Ki_rfTI/edit?usp=sharing">Arbetad
+                        tid</a></li>
                 <li><a target="_blank" href="https://github.com/04nolu/GyAb">GitHub</a></li>
             </ul>
         </div>
