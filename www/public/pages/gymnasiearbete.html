@@ -43,24 +43,12 @@
 
 
     <main>
-        <h3 id="loading" style="position: absolute; bottom: 25rem; left: 0; width: 100%;">Powerpointen tar lite tid att
+        <h3 style="z-index: 1; position: absolute; bottom: 25rem; left: 0; width: 100%;">Powerpointen tar lite tid att
             ladda...</h3>
-        <iframe
+        <iframe style="z-index: 2; position: relative;"
             src="https://docs.google.com/presentation/d/e/2PACX-1vRPlU3b6nrotaiZwN8xav5mxsuvWTwYN0gPyEjC42syZnvaGXfuldLmBwl52lEkkD4fSCtEv78L7Oue/embed?start=true&loop=true&delayms=5000"
             frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
             webkitallowfullscreen="true"></iframe>
-
-
-        <script>
-            window.addEventListener("load", function () {
-                var iframe = document.querySelector("iframe");
-                var text = document.getElementById("loading");
-
-                iframe.addEventListener("load", function () {
-                    text.style.display = "none";
-                });
-            });
-        </script>
     </main>
 
 
