@@ -14,6 +14,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 4rem;
+  z-index: 999;
 }
 
 .logo {
@@ -207,7 +208,7 @@ footer {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 120vh;
   background: radial-gradient(circle, #24246e, #06051f);
 }
 
@@ -221,7 +222,7 @@ main {
   padding: 3vh;
   min-width: 50rem;
   max-width: 80rem;
-  background-color: #462345;
+  /*   background-color: #462345; */
   border-radius: 2%;
 }
 main h1 {
@@ -230,8 +231,7 @@ main h1 {
 }
 main p {
   font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  line-height: 1.6rem;
 }
 
 .divPro {
@@ -271,16 +271,18 @@ img {
   object-fit: cover;
   margin: 2vh auto; */
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto 1rem;
   width: auto;
   max-width: 400px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   border-radius: 2%;
-  box-shadow: 2%;
+  box-shadow: 5px 5px 5px #333;
+}
+
+iframe {
+  margin: 0.5rem auto 1rem;
 }
 
 @media screen and (max-width: 768px) {
