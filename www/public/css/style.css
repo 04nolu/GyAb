@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* $background-color: #25262b; */
+/* $background-color: #25262b; #462345;*/
 nav {
   display: flex;
   background-color: rgb(5, 5, 122);
@@ -215,14 +215,10 @@ body {
 main {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   flex-grow: 1;
-  /*   font-size: 1.5rem; */
   color: white;
   text-align: center;
-  margin: 1rem auto;
-  padding: 3vh;
+  margin: 2rem 8rem;
   min-width: 50rem;
-  max-width: 80rem;
-  /*   background-color: #462345; */
   border-radius: 2%;
 }
 main h1 {
@@ -256,7 +252,6 @@ main p {
   font-weight: bold;
   font-size: 1.1rem;
   padding: 3.5% 0;
-  /* line-height: 1.2; */
   transition: all 0.2s ease-in-out;
 }
 .divPro .divProjects ul li a:hover {
@@ -265,24 +260,24 @@ main p {
 }
 
 img {
-  /* float: center;
-  width: 25rem;
-  height: 25rem;
-  object-fit: cover;
-  margin: 2vh auto; */
   display: block;
   margin: 2rem auto 1rem;
-  width: auto;
-  max-width: 400px;
-  height: auto;
+  height: 20rem;
+  aspect-ratio: 1;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2%;
-  box-shadow: 5px 5px 5px #333;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 iframe {
   margin: 0.5rem auto 1rem;
+}
+
+.picutre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
 @media screen and (max-width: 768px) {
