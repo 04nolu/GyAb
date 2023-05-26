@@ -44,8 +44,6 @@
 
     <main>
         <h1>Ettan</h1>
-        <p>(Jag hade egentligen också lagt in det jag
-            också gjort i trean men det hade blivit för tidskrävande)</p>
 
         <?php
         echo ('<div class="divPro">');
@@ -83,6 +81,9 @@
 
         echo ('</div>');
         ?>
+
+        <p>(Jag hade egentligen också lagt in det jag
+            också gjort i trean men det hade blivit för tidskrävande)</p>
     </main>
 
 

@@ -70,14 +70,12 @@ main {
 }
 
 .divPro {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 
   .divProjects {
-    padding: 1vh 3vh 0;
-    flex: 0.2;
-
+    padding: 3vh 3vh 0;
+    
     ul {
       list-style: none;
 
@@ -122,7 +120,7 @@ iframe {
 .picturesIndex {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 1rem;
 }
 
 
