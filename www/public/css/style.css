@@ -230,6 +230,14 @@ main p {
   line-height: 1.6rem;
 }
 
+.about {
+  width: 40rem;
+  margin: auto;
+}
+.about p {
+  text-align: left;
+}
+
 .divPro {
   display: flex;
   flex-wrap: wrap;
@@ -273,6 +281,7 @@ img {
 iframe {
   margin: 0.5rem auto 1rem;
   border-radius: 2%;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 .picturesIndex {

@@ -50,6 +50,15 @@ main {
   }
 }
 
+.about {
+  width: 40rem;
+  margin: auto;
+
+  p {
+    text-align: left;
+  }
+}
+
 .divPro {
   display: flex;
   flex-wrap: wrap;
@@ -61,8 +70,10 @@ main {
 
     ul {
       list-style: none;
+
       li {
         padding: 0 3vh;
+
         a {
           text-decoration: none;
           text-transform: capitalize;
@@ -95,6 +106,7 @@ img {
 iframe {
   margin: 0.5rem auto 1rem;
   border-radius: 2%;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
 }
 
 .picturesIndex {
