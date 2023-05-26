@@ -43,7 +43,7 @@
 
 
     <main>
-        <h1>Ettan</h1>
+        <h1>Projekt</h1>
 
         <?php
         echo ('<div class="divPro">');

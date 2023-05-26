@@ -18,11 +18,11 @@ if (isset($folderName)) {
     natsort($fileNames);
 
     foreach ($fileNames as $fileName) {
-        echo '<li><a href="' . $folderName . '/' . $fileName . '.html">' . $fileName . '</a><li><br>';
+        echo '<li><a href="' . $folderName . '/' . $fileName . '.html">' . $fileName . '</a></li><br>';
     }
     echo ("<br>");
 
-    echo ('<li></ul>');
+    echo ('</ul>');
     echo ('</div>');
 }
 ?>

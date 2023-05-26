@@ -44,6 +44,10 @@ main {
     margin-bottom: 1rem;
   }
 
+  h3 {
+    font-size: 1.25rem;
+  }
+
   p {
     font-size: 1rem;
     line-height: 1.6rem;
@@ -70,12 +74,12 @@ main {
 }
 
 .divPro {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  columns: 5;
 
   .divProjects {
-    padding: 3vh 3vh 0;
-    
+    padding: 2rem 0 0;
+    break-inside: avoid-column;
+
     ul {
       list-style: none;
 
@@ -88,11 +92,11 @@ main {
           color: $navfootColor;
           font-weight: bold;
           font-size: 1.1rem;
-          padding: 3.5% 0;
-          transition: all 0.2s ease-in-out;
+          padding: 5% 0;
+          transition: all 0.1s ease-in-out;
 
           &:hover {
-            padding-left: 0.3rem;
+            padding-left: 0.5rem;
             color: $navfootHover;
           }
         }

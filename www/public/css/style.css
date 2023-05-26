@@ -225,6 +225,9 @@ main h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+main h3 {
+  font-size: 1.25rem;
+}
 main p {
   font-size: 1rem;
   line-height: 1.6rem;
@@ -244,11 +247,13 @@ main p {
 }
 
 .divPro {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  -moz-columns: 5;
+       columns: 5;
 }
 .divPro .divProjects {
-  padding: 3vh 3vh 0;
+  padding: 2rem 0 0;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid-column;
 }
 .divPro .divProjects ul {
   list-style: none;
@@ -262,11 +267,11 @@ main p {
   color: #bbbbbb;
   font-weight: bold;
   font-size: 1.1rem;
-  padding: 3.5% 0;
-  transition: all 0.2s ease-in-out;
+  padding: 5% 0;
+  transition: all 0.1s ease-in-out;
 }
 .divPro .divProjects ul li a:hover {
-  padding-left: 0.3rem;
+  padding-left: 0.5rem;
   color: white;
 }
 
