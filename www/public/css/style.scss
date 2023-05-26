@@ -56,6 +56,16 @@ main {
 
   p {
     text-align: left;
+    text-shadow:
+      0.07em 0 black,
+      0 0.07em black,
+      -0.07em 0 black,
+      0 -0.07em black;
+  }
+
+  iframe {
+    display: block;
+    text-align: left;
   }
 }
 
@@ -104,7 +114,7 @@ img {
 }
 
 iframe {
-  margin: 0.5rem auto 1rem;
+  margin: 0.5rem 0 1rem;
   border-radius: 2%;
   box-shadow: 0.5rem 0.5rem 0.5rem black;
 }
