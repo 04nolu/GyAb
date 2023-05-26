@@ -82,8 +82,7 @@
         echo ('</div>');
         ?>
 
-        <p>(Jag hade egentligen också lagt in det jag
-            också gjort i trean men det hade blivit för tidskrävande)</p>
+        <p>(Jag hade egentligen också lagt in det jag gjort i trean men det hade blivit för tidskrävande)</p>
     </main>
 
 
@@ -109,7 +108,7 @@
         <div class="footerCol">
             <h4>Kontakta mig</h4>
             <ul>
-                <li><a id="aGolden">Ludvig Noriander</a></li>
+                <li><a href="" id="aGolden">Ludvig Noriander</a></li>
                 <li><a href="tel:+46736274007">+46 73 627 40 07</a></li>
                 <li><a href="mailto:04nolu@skola.engelholm.se">04nolu@skola.engelholm.se</a></li>
             </ul>

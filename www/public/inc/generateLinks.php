@@ -10,17 +10,18 @@ if (isset($folderName)) {
         }
     }
     echo ('<div class="divProjects">');
-    echo ('<ul>');
 
     echo ("<h3>" . basename($folderName) . "</h3>");
     echo ("<br>");
 
+    echo ('<ul>');
+
     natsort($fileNames);
 
     foreach ($fileNames as $fileName) {
-        echo '<li><a href="' . $folderName . '/' . $fileName . '.html">' . $fileName . '</a></li><br>';
+        echo '<li><a href="' . $folderName . '/' . $fileName . '.html">' . $fileName . '</a></li>';
     }
-    echo ("<br>");
+    echo ("<br><br>");
 
     echo ('</ul>');
     echo ('</div>');

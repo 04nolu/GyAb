@@ -84,7 +84,8 @@ main {
       list-style: none;
 
       li {
-        padding: 0 3vh;
+        padding: 0 3rem;
+        line-height: 2.2rem;
 
         a {
           text-decoration: none;
@@ -92,7 +93,7 @@ main {
           color: $navfootColor;
           font-weight: bold;
           font-size: 1.1rem;
-          padding: 5% 0;
+          padding: 0.5rem 0;
           transition: all 0.1s ease-in-out;
 
           &:hover {
