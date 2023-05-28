@@ -10,15 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
 
-    <script defer src="../js/nav.js"></script>
-    <script defer src="../js/rick.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/rick.js"></script>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
 
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Gymnasiearbete - Ludvig Noriander</title>
 </head>
 
@@ -45,38 +45,40 @@
     <main>
         <h1>Projekt</h1>
 
+        <p>Dessa filer har tyvärr ingen CHARSET inställning angiven, så förvänta dig att vissa tecken kan se konstiga ut!</p>
+
         <?php
         echo ('<div class="divPro">');
 
         $folderNames = [
-            '../inc/Projekt/Ettan/Webbutveckling 1/CSS 1',
-            '../inc/Projekt/Ettan/Webbutveckling 1/CSS 2'
+            'inc/Projekt/Ettan/Webbutveckling 1/CSS 1',
+            'inc/Projekt/Ettan/Webbutveckling 1/CSS 2'
         ];
 
         foreach ($folderNames as $folderName) {
-            include '../inc/generateLinks.php';
+            include 'inc/generateLinks.php';
         }
 
         $folderNames = [
-            '../inc/Projekt/Ettan/Webbutveckling 1/Projekt 1',
-            '../inc/Projekt/Ettan/Webbutveckling 1/Projekt 1/HTML 1',
-            '../inc/Projekt/Ettan/Webbutveckling 1/Projekt 1/HTML 2',
-            '../inc/Projekt/Ettan/Webbutveckling 1/Projekt 1/HTML 3'
+            'inc/Projekt/Ettan/Webbutveckling 1/Projekt 1',
+            'inc/Projekt/Ettan/Webbutveckling 1/Projekt 1/HTML 1',
+            'inc/Projekt/Ettan/Webbutveckling 1/Projekt 1/HTML 2',
+            'inc/Projekt/Ettan/Webbutveckling 1/Projekt 1/HTML 3'
         ];
 
         foreach ($folderNames as $folderName) {
-            include '../inc/generateLinks.php';
+            include 'inc/generateLinks.php';
         }
 
         $folderNames = [
-            '../inc/Projekt/Ettan/Webbutveckling 1/Snabbtest/Snabbtest 1',
-            '../inc/Projekt/Ettan/Webbutveckling 1/Snabbtest/Snabbtest 2',
-            '../inc/Projekt/Ettan/Webbutveckling 1/Snabbtest/Snabbtest 3',
-            '../inc/Projekt/Ettan/Webbutveckling 1/Snabbtest/Snabbtest 4'
+            'inc/Projekt/Ettan/Webbutveckling 1/Snabbtest/Snabbtest 1',
+            'inc/Projekt/Ettan/Webbutveckling 1/Snabbtest/Snabbtest 2',
+            'inc/Projekt/Ettan/Webbutveckling 1/Snabbtest/Snabbtest 3',
+            'inc/Projekt/Ettan/Webbutveckling 1/Snabbtest/Snabbtest 4'
         ];
 
         foreach ($folderNames as $folderName) {
-            include '../inc/generateLinks.php';
+            include 'inc/generateLinks.php';
         }
 
         echo ('</div>');
